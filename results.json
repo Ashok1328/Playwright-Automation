@@ -45,7 +45,7 @@
       {
         "outputDir": "C:/PLAYWRIGHTAUTOMATION_VSCODEEXT/test-results",
         "repeatEach": 1,
-        "retries": 0,
+        "retries": 1,
         "metadata": {
           "actualWorkers": 1
         },
@@ -62,19 +62,19 @@
     "shard": null,
     "updateSnapshots": "missing",
     "updateSourceMethod": "patch",
-    "version": "1.55.0",
+    "version": "1.56.0",
     "workers": 4,
     "webServer": null
   },
   "suites": [
     {
-      "title": "Reporter.spec.js",
-      "file": "Reporter.spec.js",
+      "title": "RetryTest.spec.js",
+      "file": "RetryTest.spec.js",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Test1",
+          "title": "Test",
           "ok": true,
           "tags": [],
           "tests": [
@@ -88,103 +88,82 @@
                 {
                   "workerIndex": 0,
                   "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 5567,
-                  "errors": [],
+                  "status": "failed",
+                  "duration": 16251,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mundefined\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mundefined\u001b[39m\n    at C:\\PLAYWRIGHTAUTOMATION_VSCODEEXT\\tests\\RetryTest.spec.js:27:24",
+                    "location": {
+                      "file": "C:\\PLAYWRIGHTAUTOMATION_VSCODEEXT\\tests\\RetryTest.spec.js",
+                      "column": 24,
+                      "line": 27
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 25 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m3000\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 26 |\u001b[39m   \u001b[36mconst\u001b[39m status \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m cart\u001b[33m.\u001b[39mcheckProductInCart(\u001b[32m\"Nexus 6\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m   expect(\u001b[36mawait\u001b[39m status)\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 28 |\u001b[39m\n \u001b[90m 29 |\u001b[39m   \u001b[90m//Place Order\u001b[39m\n \u001b[90m 30 |\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\PLAYWRIGHTAUTOMATION_VSCODEEXT\\tests\\RetryTest.spec.js",
+                        "column": 24,
+                        "line": 27
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mundefined\u001b[39m\n\n\u001b[0m \u001b[90m 25 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m3000\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 26 |\u001b[39m   \u001b[36mconst\u001b[39m status \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m cart\u001b[33m.\u001b[39mcheckProductInCart(\u001b[32m\"Nexus 6\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m   expect(\u001b[36mawait\u001b[39m status)\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 28 |\u001b[39m\n \u001b[90m 29 |\u001b[39m   \u001b[90m//Place Order\u001b[39m\n \u001b[90m 30 |\u001b[39m\u001b[0m\n\u001b[2m    at C:\\PLAYWRIGHTAUTOMATION_VSCODEEXT\\tests\\RetryTest.spec.js:27:24\u001b[22m"
+                    }
+                  ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-10-06T09:40:19.019Z",
+                  "startTime": "2025-10-07T08:16:25.443Z",
                   "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "605c2086442191e15a8d-3fb2120e6e210030ac4a",
-          "file": "Reporter.spec.js",
-          "line": 3,
-          "column": 1
-        },
-        {
-          "title": "Test2",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\PLAYWRIGHTAUTOMATION_VSCODEEXT\\test-results\\RetryTest-Test-chromium\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\PLAYWRIGHTAUTOMATION_VSCODEEXT\\tests\\RetryTest.spec.js",
+                    "column": 24,
+                    "line": 27
+                  }
+                },
                 {
-                  "workerIndex": 0,
+                  "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 8994,
+                  "duration": 20361,
                   "errors": [],
-                  "stdout": [],
+                  "stdout": [
+                    {
+                      "text": "await product.textContent\n"
+                    }
+                  ],
                   "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-10-06T09:40:26.413Z",
+                  "retry": 1,
+                  "startTime": "2025-10-07T08:16:44.410Z",
                   "annotations": [],
                   "attachments": []
                 }
               ],
-              "status": "expected"
+              "status": "flaky"
             }
           ],
-          "id": "605c2086442191e15a8d-cf21101f813676fe7141",
-          "file": "Reporter.spec.js",
-          "line": 9,
-          "column": 1
-        },
-        {
-          "title": "Test3",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 5050,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-10-06T09:40:35.432Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "605c2086442191e15a8d-c7e9148bd72c2d3d22b5",
-          "file": "Reporter.spec.js",
-          "line": 15,
-          "column": 1
+          "id": "2c48ef0e88569fb8b334-038d9d70e38d1cf44b5f",
+          "file": "RetryTest.spec.js",
+          "line": 7,
+          "column": 5
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-10-06T09:40:17.912Z",
-    "duration": 23486.015000000003,
-    "expected": 3,
+    "startTime": "2025-10-07T08:16:24.339Z",
+    "duration": 41506.026000000005,
+    "expected": 0,
     "skipped": 0,
     "unexpected": 0,
-    "flaky": 0
+    "flaky": 1
   }
 }
