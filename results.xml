@@ -1,10 +1,26 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="41.506026000000006">
-<testsuite name="RetryTest.spec.js" timestamp="2025-10-07T08:16:24.383Z" hostname="chromium" tests="1" failures="0" skipped="0" time="36.612" errors="0">
-<testcase name="Test" classname="RetryTest.spec.js" time="36.612">
+<testsuites id="" name="" tests="1" failures="1" skipped="0" errors="0" time="1.7869160000000002">
+<testsuite name="APITest.spec.js" timestamp="2025-10-08T09:07:31.391Z" hostname="chromium" tests="1" failures="1" skipped="0" time="0.629" errors="0">
+<testcase name="Post User" classname="APITest.spec.js" time="0.629">
+<failure message="APITest.spec.js:11:6 Post User" type="FAILURE">
+<![CDATA[  [chromium] › APITest.spec.js:11:6 › Post User ────────────────────────────────────────────────────
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: 201
+    Received: 401
+
+      20 |   });
+      21 |   console.log(await response.json())
+    > 22 |   expect(response.status()).toBe(201);
+         |                             ^
+      23 |
+      24 |   var res = await response.json()
+      25 |   userId = res.id
+        at C:\PLAYWRIGHTAUTOMATION_VSCODEEXT\tests\APITest.spec.js:22:29
+]]>
+</failure>
 <system-out>
-<![CDATA[
-[[ATTACHMENT|test-results\RetryTest-Test-chromium\error-context.md]]
-await product.textContent
+<![CDATA[{ error: [32m'Missing API key'[39m }
 ]]>
 </system-out>
 </testcase>
