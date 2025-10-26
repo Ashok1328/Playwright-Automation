@@ -42,7 +42,7 @@ test("Prompt Dialog", async ({ page }) => {
     expect(dialog.message()).toContain("Please enter your name:");
     expect(dialog.defaultValue()).toContain("Harry Potter");
 
-    await dialog.accept("Kriti"); //close by using OK button
+    await dialog.accept("Kriti22"); //close by using OK button
 
     // await dialog.dismiss(); // close by using cancel
   });
@@ -50,7 +50,7 @@ test("Prompt Dialog", async ({ page }) => {
   await page.click("//button[@id='promptBtn']");
 
   await expect(page.locator("//p[@id='demo']")).toHaveText(
-    "Hello Kriti! How are you today?"
+    "Hello Kriti22! How are you today?"
   );
   await page.waitForTimeout(5000);
 });

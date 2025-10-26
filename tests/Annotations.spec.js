@@ -1,21 +1,21 @@
 import { test, expect } from "@playwright/test";
 
 // only
-/* test.only("test1", async ({ page }) => {
+ test.only("test1", async ({ page }) => {
   console.log("this is my test1 ...");
 });
 
-  */
+
 
 //skip
 
-/* test.skip("test2", async ({ page }) => {
+ test.skip("test2", async ({ page }) => {
   console.log("this is my test2 ...");
 });
 
 
 
-test('test3', async({ page, browserName }) => {
+test.skip('test3', async({ page, browserName }) => {
 
   console.log("this is my test3 ...");
 
@@ -36,11 +36,11 @@ test('test4', async({ page }) => {
   console.log("this is my test4 ...");
 })
 
-*/
+
 
 // Fail
 
-/* test('test5', async({ page }) => {
+test.skip('test5', async({ page }) => {
 
   test.fail()  //exp
   console.log("this is my test5 ...");
