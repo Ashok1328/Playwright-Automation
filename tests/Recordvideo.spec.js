@@ -1,5 +1,4 @@
 import { test, expect } from "@playwright/test";
-import { ECDH } from "crypto";
 
 test("Recording Video", async ({ page }) => {
   await page.goto("https://www.demoblaze.com/index.html");
