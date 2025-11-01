@@ -34,12 +34,6 @@
         {
           "outputFile": "results.json"
         }
-      ],
-      [
-        "C:\\PLAYWRIGHTAUTOMATION_VSCODEEXT\\node_modules\\allure-playwright\\dist\\cjs\\index.js",
-        {
-          "outputFolder": "my-allure-results"
-        }
       ]
     ],
     "reportSlowTests": {
@@ -74,13 +68,13 @@
   },
   "suites": [
     {
-      "title": "HandleCheckBoxes.spec.js",
-      "file": "HandleCheckBoxes.spec.js",
+      "title": "POMTest.spec.js",
+      "file": "POMTest.spec.js",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "HandleCheckBoxes",
+          "title": "Test",
           "ok": true,
           "tags": [],
           "tests": [
@@ -95,12 +89,19 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 19204,
+                  "duration": 21977,
                   "errors": [],
-                  "stdout": [],
+                  "stdout": [
+                    {
+                      "text": "await product.textContent\n"
+                    },
+                    {
+                      "text": "await product.textContent\n"
+                    }
+                  ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-10-27T08:10:50.846Z",
+                  "startTime": "2025-10-31T17:18:46.483Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -108,9 +109,9 @@
               "status": "expected"
             }
           ],
-          "id": "f03e89acc2942db9da2e-d85b59703eeaf09520e2",
-          "file": "HandleCheckBoxes.spec.js",
-          "line": 3,
+          "id": "af43472a6966a818aec1-edbab5d058c58295036d",
+          "file": "POMTest.spec.js",
+          "line": 8,
           "column": 5
         }
       ]
@@ -118,8 +119,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-10-27T08:10:49.587Z",
-    "duration": 23129.721,
+    "startTime": "2025-10-31T17:18:44.922Z",
+    "duration": 24706.556,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,

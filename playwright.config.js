@@ -32,7 +32,7 @@ export default defineConfig({
     ["html"],
     ["junit", { outputFile: "results.xml" }],
     ["json", { outputFile: "results.json" }],
-   // ["allure-playwright", { outputFolder: "my-allure-results" }],
+    // ["allure-playwright", { outputFolder: "my-allure-results" }],
   ],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
@@ -40,7 +40,7 @@ export default defineConfig({
     // baseURL: 'http://localhost:3000',
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     // trace: "retain-on-failure",
-    // screenshot: "only-on-failure",
+    screenshot: "only-on-failure",
     // video: "retain-on-failure",
   },
   /* Configure projects for major browsers */

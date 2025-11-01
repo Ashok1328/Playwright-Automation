@@ -3,6 +3,7 @@ import { LoginPage } from "../pages/LoginPage.spec";
 import { HomePage } from "../pages/HomePage.spec";
 import { CartPage } from "../pages/CartPage.spec";
 import { PlaceOrder } from "../pages/PlaceOrder.spec";
+import { LogoutPage } from "../pages/LogoutPage.spec";
 
 test("Test", async ({ page }) => {
   //Login
@@ -38,4 +39,9 @@ test("Test", async ({ page }) => {
     "3"
   );
   await page.waitForTimeout(5000);
+
+  //Logout
+
+  const logout = new LogoutPage(page);
+  await logout.Logout();
 });

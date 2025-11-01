@@ -1,6 +1,11 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="23.129721">
-<testsuite name="HandleCheckBoxes.spec.js" timestamp="2025-10-27T08:10:49.625Z" hostname="chromium" tests="1" failures="0" skipped="0" time="19.204" errors="0">
-<testcase name="HandleCheckBoxes" classname="HandleCheckBoxes.spec.js" time="19.204">
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="24.706556">
+<testsuite name="POMTest.spec.js" timestamp="2025-10-31T17:18:45.069Z" hostname="chromium" tests="1" failures="0" skipped="0" time="21.977" errors="0">
+<testcase name="Test" classname="POMTest.spec.js" time="21.977">
+<system-out>
+<![CDATA[await product.textContent
+await product.textContent
+]]>
+</system-out>
 </testcase>
 </testsuite>
 </testsuites>
